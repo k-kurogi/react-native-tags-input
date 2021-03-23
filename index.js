@@ -206,7 +206,7 @@ class Tags extends React.Component {
                 key={count}
               >
               <Text style={StyleSheet.flatten([styles.tagText, tagTextStyle])}>{item}</Text>
-              //TouchEvent is changed onPressIn to onPress
+              {/* TouchEvent is changed onPressIn to onPress */}
               <TouchableOpacity onPress={() => this.deleteTag(count, tags, updateState) }>
                   {deleteElement ? deleteElement : (
                     <Image
